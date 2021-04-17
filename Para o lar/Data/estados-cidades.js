@@ -1,4 +1,5 @@
-const data = [{
+const data = [
+  {
     "estados": [
       {
         "sigla": "AC",
@@ -5735,3 +5736,16 @@ const data = [{
     ]
   }
 ]
+
+// No estados-cidade.js apresente o nome do Estado, a sigla e todas as cidadades, sem arrays aparentes no console.
+
+// Resolução:
+for (let i = 0; i < data.length; i++) {
+  let dados = data[i]
+  
+  for (let j = 0; j < dados.estados.length; j++) {
+    console.log(`${dados.estados[j].sigla}`);
+    console.log(`${dados.estados[j].nome}`);
+    console.log(`${dados.estados[j].cidades}`);
+  }
+}

@@ -147,5 +147,16 @@ const obj = [{
     "whitesmoke": [245, 245, 245, 1],
     "yellow": [255, 255, 0, 1],
     "yellowgreen": [154, 205, 50, 1],
-    "rebeccapurple": [102, 51, 153, 1]
-}]
+    "rebeccapurple": [102, 51, 153, 1]}
+]
+
+// No colors-rgb.js apresente o nome da cor e o codigo RGB como no exemplo: "gainsboro - rgb(220, 220, 220, 1)"
+
+// Resolução:
+for (let i = 0; i < obj.length; i++) {    
+    let cor = obj[i]
+
+    for (let item in cor) {
+        console.log(`${item} - rgb(${cor[item]})`)
+    }
+}
